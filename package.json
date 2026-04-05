@@ -1,0 +1,22 @@
+{
+  "name": "luckydev-nuxt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "node .output/server/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nuxt/ui": "^4.6.1",
+    "nuxt": "^4.4.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
