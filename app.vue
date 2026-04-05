@@ -9,7 +9,7 @@
         <template #left>
           <a href="/" class="flex items-center gap-2">
             <img src="/images/icon.png" alt="Lucky Developments" class="w-8 h-8 object-contain" />
-            <span class="font-mono text-sm font-semibold text-blue-400 tracking-widest uppercase hidden sm:block">Lucky.dev</span>
+            <span class="font-mono text-sm font-semibold text-blue-400 tracking-widest uppercase hidden sm:block">Lucky Developments</span>
           </a>
         </template>
         <template #right>
