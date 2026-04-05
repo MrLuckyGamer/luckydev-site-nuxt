@@ -45,8 +45,8 @@ body {
 }
 
 .hero-logo {
-  width: 220px;
-  height: 220px;
+  width: 420px;
+  height: 420px;
   object-fit: contain;
   filter: drop-shadow(0 0 40px rgba(59, 130, 246, 0.4));
   animation: float 6s ease-in-out infinite;

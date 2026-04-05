@@ -290,7 +290,7 @@ const languages = [
 
 const frameworks = [
   { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
-  { name: 'Nuxt.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxt/nuxt-original.svg' },
+  { name: 'Nuxt.js (NuxtUI)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxt/nuxt-original.svg' },
   { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
   { name: 'Discord.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg' },
   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
@@ -300,9 +300,13 @@ const tools = [
   { name: 'HeidiSQL', icon: 'https://upload.wikimedia.org/wikipedia/commons/3/32/HeidiSQL_logo_image.png' },
   { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
   { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-  { name: 'GH Actions', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg' },
+  { name: 'GitHub Actions', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg' },
+  { name: 'Source Engine', icon: 'https://developer.valvesoftware.com/w/images/thumb/1/10/Icon-Source.png/128px-Icon-Source.png' },
+  { name: 'Game Server Admin', icon: 'https://cdn-icons-png.flaticon.com/512/2004/2004925.png' },
   { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
   { name: 'Blender', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg' },
+  { name: 'Substance Painter', icon: 'https://helpx.adobe.com/content/dam/substance-3d/general-knowledge/ecosystem/substance-3d-icons-svg/Adobe_Substance_3D_Painter_icon.svg' },
+  { name: 'Hammer', icon: 'https://developer.valvesoftware.com/w/images/thumb/4/4f/Icon-Hammer_4.x.png/64px-Icon-Hammer_4.x.png' },
 ]
 
 const services = [
