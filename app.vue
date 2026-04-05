@@ -114,6 +114,15 @@
             </div>
           </div>
 
+          <!-- Databases -->
+          <h3 class="font-mono text-xs uppercase tracking-widest text-slate-500 mb-4 mt-10">Databases</h3>
+          <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-3">
+            <div v-for="db in databases" :key="db.name" class="tech-item">
+              <img :src="db.icon" :alt="db.name" />
+              <span>{{ db.name }}</span>
+            </div>
+          </div>
+
           <!-- Frameworks -->
           <h3 class="font-mono text-xs uppercase tracking-widest text-slate-500 mb-4 mt-10">Frameworks & Libraries</h3>
           <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-3">
@@ -284,27 +293,30 @@ const languages = [
   { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
   { name: 'Ruby', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg' },
   { name: 'Lua/GLua', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original.svg' },
+]
+
+const databases = [
   { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
   { name: 'SQLite', icon: 'https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg' },
+  { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
 ]
 
 const frameworks = [
-  { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
-  { name: 'Nuxt.js (NuxtUI)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxt/nuxt-original.svg' },
   { name: 'Vue.js (Vue)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
-  { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
-  { name: 'Discord.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg' },
+  { name: 'Nuxt.js (NuxtUI)', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxt/nuxt-original.svg' },
   { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+  { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+  { name: 'Bootstrap', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg' },
+  { name: 'Discord.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/discordjs/discordjs-original.svg' },
 ]
 
 const tools = [
-  { name: 'HeidiSQL', icon: 'https://upload.wikimedia.org/wikipedia/commons/3/32/HeidiSQL_logo_image.png' },
+  { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
   { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
   { name: 'Docker', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
   { name: 'GitHub Actions', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg' },
+  { name: 'HeidiSQL', icon: 'https://upload.wikimedia.org/wikipedia/commons/3/32/HeidiSQL_logo_image.png' },
   { name: 'Source Engine', icon: 'https://developer.valvesoftware.com/w/images/thumb/1/10/Icon-Source.png/128px-Icon-Source.png' },
-  { name: 'Game Server Admin', icon: 'https://cdn-icons-png.flaticon.com/512/2004/2004925.png' },
-  { name: 'VS Code', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg' },
   { name: 'Blender', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blender/blender-original.svg' },
   { name: 'Substance Painter', icon: 'https://helpx.adobe.com/content/dam/substance-3d/general-knowledge/ecosystem/substance-3d-icons-svg/Adobe_Substance_3D_Painter_icon.svg' },
   { name: 'Hammer', icon: 'https://developer.valvesoftware.com/w/images/thumb/4/4f/Icon-Hammer_4.x.png/64px-Icon-Hammer_4.x.png' },
