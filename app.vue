@@ -327,6 +327,7 @@ const projects = [
   { name: 'Star Wars Inquisitorius', category: 'HTML · CSS · JavaScript', href: 'https://inq.luckydev.xyz', img: '/images/inq_emblem.png' },
   { name: 'QR Code Generator', category: 'HTML · CSS · JavaScript', href: 'https://qrgen.luckydev.xyz', img: '/images/qrcode.png' },
   { name: 'Sovereign Roleplay', category: 'HTML · CSS', href: 'https://svn.gg', img: '/images/svn.jpg' },
+  { name: 'Lucky Developments Old Site', category: 'HTML · CSS · PHP · JavaScript', href: 'https://old.luckydev.xyz', img: '/images/luckydevold.jpg' },
 ]
 
 // Binary rain
