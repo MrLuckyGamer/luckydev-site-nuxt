@@ -13,6 +13,10 @@ export default defineNuxtConfig({
         { name: 'author', content: 'Lucky Developments' },
         { name: 'robots', content: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1' },
         { name: 'theme-color', content: '#007bff' },
+        { name: 'image', content: '/images/logo.png' },
+        { name: 'image:alt', content: 'Lucky Developments logo' },
+        { name: 'image:width', content: '1200' },
+        { name: 'image:height', content: '630' },
         // Open Graph
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Lucky Developments' },
