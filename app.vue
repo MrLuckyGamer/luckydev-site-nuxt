@@ -55,11 +55,16 @@
         <div class="container mx-auto px-4 max-w-5xl">
           <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="flex-shrink-0">
-              <div class="relative inline-block">
+              <div class="relative">
                 <img src="/images/avatar.png" alt="Lucky" class="w-44 h-44 rounded-2xl object-cover border-2 border-blue-500/30 shadow-2xl" />
-                <div class="absolute -bottom-3 -right-3 bg-blue-600 rounded-lg px-3 py-1.5 z-10">
-                  <span class="font-mono text-xs font-bold text-white">AUS 🇦🇺</span>
-                </div>
+                  <div class="absolute -bottom-3 -right-3 bg-blue-600 rounded-lg px-3 py-1.5 z-10 flex items-center gap-1.5">
+                    <img 
+                      src="https://flagcdn.com/w20/au.png" 
+                      alt="Australia" 
+                      class="w-5 h-auto rounded-sm"
+                    />
+                    <span class="font-mono text-xs font-bold text-white">AUS</span>
+                  </div>
               </div>
             </div>
             <div class="flex-1">
