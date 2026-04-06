@@ -55,9 +55,9 @@
         <div class="container mx-auto px-4 max-w-5xl">
           <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="flex-shrink-0">
-              <div class="relative">
+              <div class="relative inline-block">
                 <img src="/images/avatar.png" alt="Lucky" class="w-44 h-44 rounded-2xl object-cover border-2 border-blue-500/30 shadow-2xl" />
-                <div class="absolute -bottom-3 -right-3 bg-blue-600 rounded-lg px-3 py-1.5">
+                <div class="absolute -bottom-3 -right-3 bg-blue-600 rounded-lg px-3 py-1.5 z-10">
                   <span class="font-mono text-xs font-bold text-white">AUS 🇦🇺</span>
                 </div>
               </div>
