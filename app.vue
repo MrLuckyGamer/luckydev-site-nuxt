@@ -339,13 +339,15 @@ const projects = [
   { name: 'PropHunt: Enhanced Gamemode', category: "Garry's Mod · LUA/GLUA", href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=1758906555', img: '/images/ph.jpg' },
   { name: 'RanchRP Forums Modifications', category: 'MyBB · HTML · PHP · CSS', href: 'https://web.archive.org/web/20201001121119/https://www.ranchrp.net/', img: '/images/ranch.jpg' },
   { name: 'MINT Auto Styling Website', category: 'HTML · PHP · CSS', href: 'https://mint-as.com.au/', img: '/images/mint.jpg' },
-  { name: 'rp_anaxes_gg', category: 'Hammer · Source Map', href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3222030009', img: '/images/anaxes.jpg' },
-  { name: 'rp_titan_rishi_alin_gg', category: 'Hammer · Source Map', href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3037513684', img: '/images/alin.jpg' },
+  { name: 'rp_anaxes_gg', category: 'Hammer · Source Map · Garry\'s Mod', href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3222030009', img: '/images/anaxes.jpg' },
+  { name: 'rp_titan_rishi_alin_gg', category: 'Hammer · Source Map · Garry\'s Mod', href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3037513684', img: '/images/alin.jpg' },
   { name: 'Inasha Discord Bot', category: 'Node.js · Discord.js', href: 'https://inasha.luckydev.xyz', img: '/images/inasha.png' },
   { name: 'Star Wars Inquisitorius', category: 'HTML · CSS · JavaScript', href: 'https://inq.luckydev.xyz', img: '/images/inq_emblem.png' },
   { name: 'QR Code Generator', category: 'HTML · CSS · JavaScript', href: 'https://qrgen.luckydev.xyz', img: '/images/qrcode.png' },
   { name: 'Sovereign Roleplay', category: 'HTML · CSS', href: 'https://svn.gg', img: '/images/svn.jpg' },
   { name: 'Lucky Developments Old Site', category: 'HTML · CSS · PHP · JavaScript', href: 'https://old.luckydev.xyz', img: '/images/luckydevold.jpg' },
+  { name: 'rp_anaxes_svn', category: 'Hammer · Source Map · Garry\'s Mod', href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3707166437', img: '/images/svn_anaxes.jpg' },
+  { name: 'rp_batuu_svn', category: 'Hammer · Source Map · Garry\'s Mod', href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3707137640', img: '/images/svn_batuu.jpg' },
 ]
 
 // Binary rain
