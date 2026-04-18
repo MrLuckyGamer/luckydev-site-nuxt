@@ -235,6 +235,7 @@
             <p class="text-slate-400 mb-4">
               You can also reach me on Discord: <span class="discord-tag">luckyyyyyyyy</span>
             </p>
+            <p class="text-slate-600 text-xs font-mono mb-4">LuckyDev · ABN: 24 842 046 929</p>
             <div class="flex justify-center gap-3">
               <UButton
                 href="https://github.com/MrLuckyGamer"
@@ -266,7 +267,8 @@
       <!-- Footer -->
       <footer class="site-footer">
         <div class="container mx-auto px-4">
-          <p>© 2026 Lucky Developments. All rights reserved.</p>
+          <p>© 2026 LuckyDev (Lucky Developments). All rights reserved.</p>
+          <p class="mt-1 text-slate-500 text-sm font-mono">ABN: 24 842 046 929</p>
           <p class="mt-1">For all questions and inquiries, please visit the contact section above.</p>
         </div>
       </footer>
