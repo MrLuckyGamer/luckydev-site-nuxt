@@ -104,7 +104,7 @@
             <div class="section-divider mx-auto"></div>
             <p class="text-slate-400 mb-6">Languages, frameworks, and tools I use across web, scripting, and game development.</p>
             <img
-              src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=MrLuckyGamer&theme=dark&layout=compact&langs_count=10&title_color=ffffff&bg_color=00000000&hide_border=true"
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=MrLuckyGamer&layout=compact&langs_count=10&theme=dark&text_color=ffffff&title_color=ffffff&hide_border=true"
               alt="Most Used Languages"
               class="stats-img mx-auto"
             />
