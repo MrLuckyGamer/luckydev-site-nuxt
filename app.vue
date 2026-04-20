@@ -206,17 +206,17 @@
             <form @submit.prevent="submitContact">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                 <UFormField label="Your Name">
-                  <UInput v-model="form.name" placeholder="John Doe" required size="lg" class="w-full" />
+                  <UInput v-model="form.name" placeholder="John Doe" :disabled="submitting" required size="lg" class="w-full" />
                 </UFormField>
                 <UFormField label="Your Email">
-                  <UInput v-model="form.email" type="email" placeholder="john@example.com" required size="lg" class="w-full" />
+                  <UInput v-model="form.email" type="email" placeholder="john@example.com" :disabled="submitting" required size="lg" class="w-full" />
                 </UFormField>
               </div>
               <UFormField label="Your Message" class="mb-5">
-                <UTextarea v-model="form.message" placeholder="Tell me about your project..." rows="5" required size="lg" class="w-full" />
+                <UTextarea v-model="form.message" placeholder="Tell me about your project..." rows="5" :disabled="submitting" required size="lg" class="w-full" />
               </UFormField>
-              <UButton type="submit" size="lg" color="primary" block class="font-mono text-xs tracking-widest uppercase">
-                Send Message
+              <UButton type="submit" size="lg" color="primary" block :loading="submitting" :disabled="submitting" class="font-mono text-xs tracking-widest uppercase">
+                {{ submitting ? 'Sending...' : 'Send Message' }}
               </UButton>
             </form>
 
@@ -226,7 +226,17 @@
               variant="subtle"
               icon="i-heroicons-check-circle"
               title="Message sent!"
-              description="Your email window has opened. Please send your message from there."
+              description="Thanks for reaching out. I'll get back to you soon."
+              class="mt-5"
+            />
+
+            <UAlert
+              v-if="submitError"
+              color="error"
+              variant="subtle"
+              icon="i-heroicons-exclamation-circle"
+              title="Failed to send"
+              :description="submitError"
               class="mt-5"
             />
           </div>
@@ -279,14 +289,30 @@
 <script setup lang="ts">
 const form = ref({ name: '', email: '', message: '' })
 const submitted = ref(false)
+const submitting = ref(false)
+const submitError = ref('')
 
-function submitContact() {
-  const { name, email, message } = form.value
-  const subject = encodeURIComponent(`New message from ${name}`)
-  const body = encodeURIComponent(`From: ${name} (${email})\n\n${message}`)
-  window.location.href = `mailto:contactluckydevelopment@gmail.com?subject=${subject}&body=${body}`
-  setTimeout(() => { submitted.value = true }, 800)
-  form.value = { name: '', email: '', message: '' }
+async function submitContact() {
+  submitting.value = true
+  submitted.value = false
+  submitError.value = ''
+
+  try {
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        name: form.value.name,
+        email: form.value.email,
+        message: form.value.message,
+      },
+    })
+    submitted.value = true
+    form.value = { name: '', email: '', message: '' }
+  } catch (err: any) {
+    submitError.value = err?.data?.statusMessage || 'Something went wrong. Please try again.'
+  } finally {
+    submitting.value = false
+  }
 }
 
 const languages = [
