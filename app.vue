@@ -226,7 +226,7 @@
               variant="subtle"
               icon="i-heroicons-check-circle"
               title="Message sent!"
-              description="Your email window has opened — please send your message from there."
+              description="Your email window has opened. Please send your message from there."
               class="mt-5"
             />
           </div>
