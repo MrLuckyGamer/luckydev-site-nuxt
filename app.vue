@@ -283,14 +283,12 @@ const submitted = ref(false)
 function submitContact() {
   const { name, email, message } = form.value
   const subject = encodeURIComponent(`New message from ${name}`)
-  const bodyLines = [
-    `Name: ${name}`,
-    `Email: ${email}`,
-    ``,
-    `Message:`,
-    message
-  ]
-  const body = bodyLines.map(line => encodeURIComponent(line)).join('%0D%0A')
+  const bodyText = `Name: ${name}\r\nEmail: ${email}\r\n\r\nMessage:\r\n${message}`
+  const body = bodyText.split('').map(c => {
+    if (c === '\r') return '%0D'
+    if (c === '\n') return '%0A'
+    return encodeURIComponent(c)
+  }).join('')
   window.location.href = `mailto:contactluckydevelopment@gmail.com?subject=${subject}&body=${body}`
   setTimeout(() => { submitted.value = true }, 800)
   form.value = { name: '', email: '', message: '' }
