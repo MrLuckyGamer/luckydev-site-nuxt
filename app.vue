@@ -211,6 +211,15 @@
                 <UFormField label="Your Email">
                   <UInput v-model="form.email" type="email" placeholder="john@example.com" required size="lg" class="w-full" />
                 </UFormField>
+                <UFormField label="Subject" class="sm:col-span-2">
+                  <UInput
+                    v-model="form.subject"
+                    placeholder="Project inquiry, question, etc..."
+                    required
+                    size="lg"
+                    class="w-full"
+                  />
+                </UFormField>
               </div>
               <UFormField label="Your Message" class="mb-5">
                 <UTextarea v-model="form.message" placeholder="Tell me about your project..." rows="5" required size="lg" class="w-full" />
@@ -277,21 +286,37 @@
 </template>
 
 <script setup lang="ts">
-const form = ref({ name: '', email: '', message: '' })
+import { ref, onMounted } from 'vue'
+
+const form = ref({
+  name: '',
+  email: '',
+  subject: '',
+  message: ''
+})
+
 const submitted = ref(false)
 
 function submitContact() {
-  const { name, email, message } = form.value
-  const subject = encodeURIComponent(`New message from ${name}`)
-  const bodyText = `Name: ${name}\r\nEmail: ${email}\r\n\r\nMessage:\r\n${message}`
-  const body = bodyText.split('').map(c => {
-    if (c === '\r') return '%0D'
-    if (c === '\n') return '%0A'
-    return encodeURIComponent(c)
-  }).join('')
-  window.location.href = `mailto:contactluckydevelopment@gmail.com?subject=${subject}&body=${body}`
-  setTimeout(() => { submitted.value = true }, 800)
-  form.value = { name: '', email: '', message: '' }
+  const { name, email, subject, message } = form.value
+  const subject = encodeURIComponent(`[Contact] ${subject}`)
+  const body = encodeURIComponent(
+    `Name: ${name}\n` +
+    `Email: ${email}\n` +
+    `Subject: ${subject}\n\n` +
+    `Message:\n${message}`
+  )
+  window.location.href =
+    `mailto:contactluckydevelopment@gmail.com?subject=${subject}&body=${body}`
+  setTimeout(() => {
+    submitted.value = true
+  }, 800)
+  form.value = {
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  }
 }
 
 const languages = [
@@ -386,12 +411,11 @@ onMounted(() => {
     for (let i = 0; i < drops.length; i++) {
       ctx.fillStyle = Math.random() > 0.92 ? '#ffffff' : '#1d4ed8'
       ctx.fillText(binary[Math.floor(Math.random() * binary.length)], i * fontSize, drops[i] * fontSize)
-      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {drops[i] = 0}
       drops[i]++
     }
     requestAnimationFrame(draw)
   }
-
   window.addEventListener('resize', init)
   init()
   requestAnimationFrame(draw)
