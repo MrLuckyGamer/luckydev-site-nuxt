@@ -72,7 +72,7 @@
               <h2 class="section-title mb-3">Who Am I</h2>
               <div class="section-divider"></div>
               <p class="text-slate-400 leading-relaxed text-lg">
-                Hi, I'm <span class="text-blue-400 font-semibold">Lucky</span>, a 23-year-old developer from Australia.
+                Hi, I'm <span class="text-blue-400 font-semibold">Connor</span> (Lucky), a 23-year-old developer from Australia.
                 Welcome to my solo development site, where I showcase my work in various coding languages, including
                 Lua/GLua, HTML, CSS, PHP, Python, and JavaScript.
               </p>
