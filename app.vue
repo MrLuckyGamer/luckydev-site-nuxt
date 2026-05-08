@@ -345,7 +345,7 @@ const projects = [
   { name: 'rp_anaxes_gg', category: 'Hammer · Source Map · Garry\'s Mod', href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3222030009', img: '/images/anaxes.jpg' },
   { name: 'rp_titan_rishi_alin_gg', category: 'Hammer · Source Map · Garry\'s Mod', href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3037513684', img: '/images/alin.jpg' },
   { name: 'Inasha Discord Bot', category: 'Node.js · Discord.js', href: 'https://inasha.luckydev.xyz', img: '/images/inasha.png' },
-  { name: 'Star Wars Inquisitorius', category: 'HTML · CSS · JavaScript', href: 'https://inq.luckydev.xyz', img: '/images/inq_emblem.png' },
+  { name: 'Star Wars Inquisitorius', category: 'HTML · CSS · JavaScript', href: 'https://inq.luckydev.xyz', img: '/images/inq_emblem.jpg' },
   { name: 'QR Code Generator', category: 'HTML · CSS · JavaScript', href: 'https://qrgen.luckydev.xyz', img: '/images/qrcode.png' },
   { name: 'Sovereign Roleplay', category: 'HTML · CSS', href: 'https://svn.gg', img: '/images/svn.jpg' },
   { name: 'Lucky Developments Old Site', category: 'HTML · CSS · PHP · JavaScript', href: 'https://old.luckydev.xyz', img: '/images/luckydevold.jpg' },
